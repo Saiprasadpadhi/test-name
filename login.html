@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lithium</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	<div class="hero">
+		<ul>
+            	<li><a href="#">Home</a></li>
+            	<li><a href="#">Watch Video</a></li>
+            	<li><a href="#">Explore</a></li>
+            	<!--<li><a href="#">About</a></li>-->
+            	<li><a href="#">Contact</a></li>
+            	<li class="active"><a href="#">log in</a></li>
+            </ul>
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+			<div class="social-icons">
+			<img src="fb.jpg">
+			<img src="tw.png">
+			<img src="gp.png">
+		</div>
+		<form id="login" class="input-group">
+			<input type="text" class="input-feild" placeholder="User Id" required>
+			<input type="text" class="input-feild" placeholder="Enter Password" required>
+			<input type="checkbox" class="check-box"><span>Remember Password</span>
+			<button type="submit" class="submit-btn">Log in</button>
+		</form>
+		<form id="Signup" class="input-group">
+			<input type="text" class="input-feild" placeholder="User Id" required>
+			<input type="email" class="input-feild" placeholder="Email Id" required>
+			<input type="text" class="input-feild" placeholder="Enter Password" required>
+			<input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+			<button type="submit" class="submit-btn">Sign Up</button>
+		</form>
+	</div>
+	</div>
+
+	<script>
+		var x=document.getElementById("login")
+		var y=document.getElementById("Signup")
+		var z=document.getElementById("btn")
+
+		function register()
+		{
+		  x.style.left="-400px";
+		  y.style.left="50px";
+		  z.style.left="110px";
+		}
+		function login()
+		{
+		  x.style.left="50px";
+		  y.style.left="450px";
+		  z.style.left="0px";
+		}
+	</script>
+
+</body>
+</html>
